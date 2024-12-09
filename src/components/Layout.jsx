@@ -1,9 +1,14 @@
-const Layout = () => {
+import Footer from "./basic/Footer";
+import Header from "./basic/Header";
+
+const Layout = ({ children }) => {
   return (
     <div>
-      레이아웃
+      <Header />
+      <main>{children}</main>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
